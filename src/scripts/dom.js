@@ -1,3 +1,24 @@
 /**
  * Responsabilidad: gestionar el los flujos de que recibe y muestra la interfáz
- * */ 
+ * */
+
+export const renderResult = (response) => {
+    const results = document.querySelector("#results");
+    const newResult = document.createElement("div");
+    let resultClasses = [
+        "grid",
+        "grid-cols-2",
+        "mx-auto",
+        "w-lg",
+        "justify-items-center",
+    ];
+    newResult.classList.add(...resultClasses);
+    const userInput = document.createElement("p");
+    const output = document.createElement("p");
+
+    userInput.innerHTML = `${response.data.input}`;
+    output.innerHTML = `${response.data.output}`;
+    newResult.appendChild(userInput);
+    newResult.appendChild(output);
+    results.appendChild(newResult);
+};

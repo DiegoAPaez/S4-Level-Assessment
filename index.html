@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="styles/styles.css" />
         <title>FizzBuzz DOM</title>
     </head>
     <body>
@@ -16,9 +17,10 @@
         >
             <label class="flex-1" for="">Enter your number:</label>
             <input
-                class="flex-1 border rounded-lg text-right"
+                class="flex-1 border rounded-lg text-center"
                 type="number"
                 placeholder="Only numbers allowed"
+                id="userInput"
             />
             <button
                 class="outline-2 outline-offset-2 outline-cyan-500 rounded-lg py-3"
@@ -27,6 +29,14 @@
                 Send
             </button>
         </form>
-        <div class="results"></div>
+        <div id="results">
+            <div
+                class="grid grid-cols-2 mx-auto w-lg justify-items-center my-5"
+            >
+                <p class="font-bold">Input</p>
+                <p class="font-bold">Output</p>
+            </div>
+        </div>
+        <script type="module" src="./src/scripts/events.js"></script>
     </body>
 </html>
