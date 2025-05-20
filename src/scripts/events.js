@@ -9,8 +9,8 @@ const form = document.querySelector("#fizzbuzz");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     const userInput = document.querySelector("#userInput");
-    const value = parseInt(userInput.value);
-    const result = fizzBuzz(value);
+    let value = parseInt(userInput.value);
+    let result = fizzBuzz(isNaN(value) ? userInput.value : value);
     renderResult(result);
     userInput.value = ``;
 });

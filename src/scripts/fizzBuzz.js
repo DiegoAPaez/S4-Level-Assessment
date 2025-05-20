@@ -13,7 +13,7 @@
 
 export const fizzBuzz = (userInput) => {
     try {
-        const response = {
+        let response = {
             status: "",
             message: "",
             data: {
