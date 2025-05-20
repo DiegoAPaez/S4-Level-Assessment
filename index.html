@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FizzBuzz DOM</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>FizzBuzz DOM</title>
+    </head>
+    <body>
+        <header class="flex justify-center my-5">
+            <h1 class="text-5xl">FizzBuzz</h1>
+        </header>
+        <form
+            class="flex py-3 my-3 justify-center flex-col w-lg mx-auto gap-4"
+            id="fizzbuzz"
+        >
+            <label class="flex-1" for="">Enter your number:</label>
+            <input
+                class="flex-1 border rounded-lg text-right"
+                type="number"
+                placeholder="Only numbers allowed"
+            />
+            <button
+                class="outline-2 outline-offset-2 outline-cyan-500 rounded-lg py-3"
+                type="submit"
+            >
+                Send
+            </button>
+        </form>
+        <div class="results"></div>
+    </body>
 </html>
