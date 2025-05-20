@@ -51,7 +51,6 @@ export const fizzBuzz = (userInput) => {
             response.data.input = userInput;
             response.data.output = userInput;
         }
-        console.log({ response });
         return response;
     } catch (error) {
         console.error(`Input error: ${error}`);
