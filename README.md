@@ -10,7 +10,7 @@ The exercises are designed to measure your understanding and application of thes
 
 ## 🚀 Deploy
 
-...
+[CLICK HERE TO ACCESS RESULT](https://diegoapaez.github.io/S4-Level-Assessment/)
 
 ## 🛠️ Getting Started
 
