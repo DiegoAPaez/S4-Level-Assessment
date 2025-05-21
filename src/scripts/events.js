@@ -1,6 +1,3 @@
-/**
- * Responsabilidad: gestionar los eventos
- * */
 import { fizzBuzz } from "./fizzBuzz.js";
 import { renderResult } from "./dom.js";
 

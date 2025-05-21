@@ -1,7 +1,3 @@
-/**
- * Responsabilidad: gestionar el los flujos de que recibe y muestra la interfáz
- * */
-
 export const renderResult = (response) => {
     const results = document.querySelector("#results");
     const newResult = document.createElement("div");
