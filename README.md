@@ -107,7 +107,7 @@ This exercise aims to assess your knowledge of JavaScript, DOM manipulation, and
 
 ### ✅ Coverage Report
 
-![Code Coverage](./assets/assets/reports/assessment-coverage.png.png)
+![Code Coverage](./assets/assets/reports/assessment-coverage.png)
 
 ## ⏳ Project Status
 
