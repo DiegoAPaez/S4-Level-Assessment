@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FizzBuzz DOM</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>FizzBuzz DOM</title>
+    </head>
+    <body class="bg-indigo-400">
+        <header class="flex justify-center my-5">
+            <h1 class="text-5xl">FizzBuzz</h1>
+        </header>
+        <form
+            class="flex my-3 justify-center flex-col w-lg mx-auto gap-4 bg-indigo-300 p-3 rounded-lg"
+            id="fizzbuzz"
+        >
+            <label class="flex-1 font-bold" for="">Enter your number:</label>
+            <input
+                class="flex-1 border rounded-lg text-center"
+                type="number"
+                placeholder="Only numbers allowed"
+                id="userInput"
+                min="0"
+                required
+            />
+            <button
+                class="outline-2 outline-offset-2 outline-indigo-700 rounded-lg py-3"
+                type="submit"
+            >
+                Send
+            </button>
+        </form>
+        <div id="results" class="bg-indigo-300 p-3 rounded-lg w-lg mx-auto">
+            <div
+                class="grid grid-cols-2 mx-auto w-lg justify-items-center my-5"
+            >
+                <p class="font-bold">Input</p>
+                <p class="font-bold">Output</p>
+            </div>
+        </div>
+        <script type="module" src="./src/scripts/events.js"></script>
+    </body>
 </html>
