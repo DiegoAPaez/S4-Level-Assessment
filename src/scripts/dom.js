@@ -5,8 +5,11 @@ export const renderResult = (response) => {
         "grid",
         "grid-cols-2",
         "mx-auto",
-        "w-lg",
+        "w-full",
         "justify-items-center",
+        "bg-indigo-200",
+        "rounded-lg",
+        "my-1",
     ];
     newResult.classList.add(...resultClasses);
     const userInput = document.createElement("p");
