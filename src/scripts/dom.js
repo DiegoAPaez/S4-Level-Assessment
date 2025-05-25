@@ -12,6 +12,9 @@ export const renderResult = (response) => {
         "my-1",
     ];
     newResult.classList.add(...resultClasses);
+    if (response.status === "Bad Request") {
+        newResult.classList.replace("bg-indigo-200", "bg-red-200");
+    }
     const userInput = document.createElement("p");
     const output = document.createElement("p");
 
